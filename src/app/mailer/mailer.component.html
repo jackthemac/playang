@@ -1,0 +1,14 @@
+<div id="theForm">
+  <h2>The form</h2>
+  <form name="theForm" (ngSubmit)="sendEmail()">
+
+ <div class="form-group">
+<label>Name, email and message</label>
+<input type="text"
+            class="form-control"
+            name="message"
+            [(ngModel)]="message">
+    </div>
+  </form>
+</div>
+<div><button (click)="sendEmail()">Send the Email</button></div>
